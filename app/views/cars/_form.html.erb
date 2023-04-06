@@ -1,0 +1,9 @@
+<%= form_with model: @car, id: dom_id(@car) do |f| %>
+  <%= f.text_field :brand %>
+
+  <%= f.number_field :mileage %>
+
+  <%= f.submit %>
+
+  <%= react_component("HelloWorld", props: {name: 'test'}, prerender: false) %>
+<% end %>
